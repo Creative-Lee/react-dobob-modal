@@ -21,15 +21,15 @@ type ModalProps = {
 
 ### isOpen
 
-모달 열기 / 닫기에 사용될 상태
+`모달 열기 / 닫기에 사용될 상태`
 
 ### closeModal
 
-모달을 닫는 함수(외부 상태를 변경시키는 함수)
+`모달을 닫는 함수(외부 상태를 변경시키는 함수)`
 
 ### children
 
-모달 내부에 표시할 컨텐츠
+`모달 내부에 표시할 컨텐츠`
 
 ## 사용 예시
 
@@ -48,11 +48,9 @@ const App = () => {
   }
 
   return (
-    <div>
-      <Modal isOpen={isModalOpen} closeModal={modalClose}>
-        //contents
-      </Modal>
-    </div>
+    <Modal isOpen={isModalOpen} closeModal={modalClose}>
+      //contents
+    </Modal>
   )
 }
 
